@@ -1,15 +1,15 @@
 import React from "react";
+import logo from "../assets/edu.png";
 import { Link } from "react-router-dom";
-import { GraduationCap, School, Users, UserRound } from "lucide-react";
+import { School, Users, UserRound } from "lucide-react";
 
 const SelectOption = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-emerald-50 flex flex-col">
-      <header className="py-6 border-b bg-white">
+      <header className="border-b bg-white">
         <div className="container mx-auto px-4 flex items-center">
           <div className="flex items-center gap-2">
-            <GraduationCap className="h-8 w-8 text-emerald-600" />
-            <span className="text-2xl font-bold">Edu-Spur</span>
+            <img src={logo} alt="logo" className="h-[100px]" />
           </div>
         </div>
       </header>

@@ -1,13 +1,12 @@
-import { GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../assets/edu.png";
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b bg-background px-10">
       <div className="container flex h-16 items-center justify-between py-4">
         <div className="flex items-center gap-2">
-          <GraduationCap className="h-6 w-6 text-emerald-600" />
-          <span className="text-xl font-bold">Edu-Spur</span>
+          <img src={logo} alt="logo" className="h-[150px]" />
         </div>
         {/* <nav className="hidden md:flex items-center gap-6">
           <Link

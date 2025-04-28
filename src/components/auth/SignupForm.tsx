@@ -1,4 +1,4 @@
-import type React from "react";
+import logo from "../../assets/edu.png";
 import { useState } from "react";
 
 interface FormData {
@@ -190,10 +190,10 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-emerald-50 flex flex-col">
-      <header className="py-6 border-b bg-white">
+      <header className="border-b bg-white">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-2xl font-bold">Edu-Spur</span>
+            <img src={logo} alt="logo" className="h-[100px]" />
           </div>
           <a
             href="/"

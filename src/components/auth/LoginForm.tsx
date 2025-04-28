@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { GraduationCap, Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
+import logo from "../../assets/edu.png";
 
 type UserType = "school" | "parent" | "teacher";
 
@@ -46,11 +47,10 @@ const LoginForm: React.FC<LoginFormProps> = ({ userType }) => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-emerald-50 flex flex-col">
-      <header className="py-6 border-b bg-white">
+      <header className="border-b bg-white">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <GraduationCap className="h-8 w-8 text-emerald-600" />
-            <span className="text-2xl font-bold">Edu-Spur</span>
+            <img src={logo} alt="logo" className="h-[100px]" />
           </Link>
           <Link
             to="/"
