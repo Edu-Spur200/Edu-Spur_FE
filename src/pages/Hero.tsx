@@ -1,8 +1,8 @@
 // import { Star } from "lucide-react";
-
+import hero from "../assets/pexels.jpg";
 export default function Hero() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-emerald-50">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-emerald-50 px-6">
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
           <div className="flex flex-col justify-center space-y-4">
@@ -56,7 +56,7 @@ export default function Hero() {
           </div>
           <div className="mx-auto w-full max-w-[500px] lg:max-w-none">
             <img
-              src="/placeholder.svg?height=550&width=550&text=Classroom+Scene"
+              src={hero}
               alt="Classroom with teacher and students"
               width={550}
               height={550}
