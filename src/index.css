@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .text-muted-foreground {
+    @apply text-gray-500;
+  }
+  .bg-card {
+    @apply bg-white;
+  }
+  .text-card-foreground {
+    @apply text-gray-900;
+  }
+  .bg-background {
+    @apply bg-white;
+  }
+  .bg-accent {
+    @apply bg-gray-100;
+  }
+  .text-accent-foreground {
+    @apply text-gray-900;
+  }
+  .border-input {
+    @apply border-gray-300;
+  }
+  .ring-offset-background {
+    @apply ring-offset-white;
+  }
+}
