@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import {  useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { CheckCircle, GraduationCap, ArrowRight } from "lucide-react";
 
 const SignupSuccess = () => {
   const [countdown, setCountdown] = useState(5);
-  const navigate = useNavigate();
+  console.log(setCountdown);
+
+  // const navigate = useNavigate();
   const location = useLocation();
 
   // Extract user type from state or default to generic
@@ -81,6 +83,7 @@ const SignupSuccess = () => {
               <p className="text-sm text-gray-500">
                 You will be redirected to the login page in {countdown}{" "}
                 seconds...
+                
               </p>
             </div>
 
