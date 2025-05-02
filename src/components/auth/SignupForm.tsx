@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/edu.png";
 import { useState } from "react";
 
@@ -193,7 +194,11 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
       <header className="border-b bg-white">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="logo" className="h-[100px]" />
+          <Link to="/" className="hover:cursor-pointer">
+
+<img src={logo} alt="logo" className="h-[100px]" />
+</Link>
+           
           </div>
           <a
             href="/"
