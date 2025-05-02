@@ -1,9 +1,9 @@
 // import { Star } from "lucide-react";
-import hero from "../assets/pexels.jpg";
+import hero from "../assets/Flat illustration of a teacher in a class _ Premium AI-generated vector.jpeg";
 export default function Hero() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-emerald-50 px-6">
-      <div className="container px-4 md:px-6">
+    <section className="w-[95vw] h-[70vh] px-6 pt-[20px] ml-[20px]">
+      {/* <div className="container px-4 md:px-6 bg-blue-500"> */}
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
@@ -58,13 +58,13 @@ export default function Hero() {
             <img
               src={hero}
               alt="Classroom with teacher and students"
-              width={550}
-              height={550}
-              className="w-full rounded-xl object-cover shadow-xl"
+              // width={150}
+              // height={20}
+              className="w-[600px] h-[500px] rounded-xl object-cover shadow-xl"
             />
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 }

@@ -14,11 +14,11 @@ export default function Services() {
   const [activeTab, setActiveTab] = useState("schools");
 
   return (
-    <section id="services" className="w-full py-12 md:py-24 lg:py-32">
+    <section id="services" className="w-full md:pt-14 lg:pt-32">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700">
+          <div className="space-y-2 ml-[90px]">
+            <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-[20px] text-emerald-700">
               Our Services
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -30,8 +30,8 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-          <div className="w-full">
+        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12 pl-[50px]">
+          <div className="w-[600px] ">
             <div className="flex w-full border-b">
               <button
                 onClick={() => setActiveTab("schools")}
@@ -125,12 +125,12 @@ export default function Services() {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-center">
+                {/* <div className="flex justify-center">
                   <button className="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium text-white rounded-md bg-emerald-600 hover:bg-emerald-700">
                     School Solutions
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </button>
-                </div>
+                </div> */}
               </div>
             )}
 
@@ -273,8 +273,8 @@ export default function Services() {
               </div>
             )}
           </div>
-          <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Why Choose Edu-Spur?</h3>
+          <div className="space-y-4 ml-[120px]">
+            <h3 className="text-2xl font-bold ">Why Choose Edu-Spur?</h3>
             <ul className="grid gap-3">
               {[
                 "Vetted, qualified educators with proven track records",
@@ -289,15 +289,15 @@ export default function Services() {
                 </li>
               ))}
             </ul>
-            <div className="rounded-lg bg-muted p-4">
-              <blockquote className="italic text-muted-foreground">
-                "Edu-Spur has transformed how we approach education, making
-                quality teaching accessible to all."
-              </blockquote>
-              <div className="mt-2 font-medium">
-                — Education Ministry Official
-              </div>
-            </div>
+              {/* <div className="rounded-lg bg-muted p-4">
+                <blockquote className="italic text-muted-foreground">
+                  "Edu-Spur has transformed how we approach education, making
+                  quality teaching accessible to all."
+                </blockquote>
+                <div className="mt-2 font-medium">
+                  — Education Ministry Official
+                </div>
+              </div> */}
           </div>
         </div>
       </div>

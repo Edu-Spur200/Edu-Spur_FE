@@ -61,7 +61,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ userType }) => {
         </div>
       </header>
 
-      <main className="flex-1 container mx-auto px-4 py-12">
+      <main className="flex-1 container mx-auto px-[30px] py-12">
         <div className="max-w-md mx-auto bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
           <div className="p-6">
             <h1 className="text-2xl font-bold mb-6 text-center">

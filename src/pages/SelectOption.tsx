@@ -9,7 +9,10 @@ const SelectOption = () => {
       <header className="border-b bg-white">
         <div className="container mx-auto px-4 flex items-center">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="logo" className="h-[100px]" />
+            <Link to="/" className="hover:cursor-pointer">
+
+              <img src={logo} alt="logo" className="h-[100px]" />
+            </Link>
           </div>
         </div>
       </header>
@@ -38,7 +41,7 @@ const SelectOption = () => {
             <RoleCard
               icon={<Users className="h-12 w-12 text-emerald-600" />}
               title="Parents"
-              description="Connect with tutors, get homeschooling support, and help your child develop future-ready skills."
+              description="Connect with tutors, get homeschooling support, help your child build awesome skills."
               signupLink="/signup/parent"
               loginLink="/login/parent"
             />

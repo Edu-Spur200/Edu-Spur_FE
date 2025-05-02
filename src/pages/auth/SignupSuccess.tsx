@@ -11,18 +11,18 @@ const SignupSuccess = () => {
   const userType = location.state?.userType || "user";
   const userName = location.state?.name || "";
 
-  // Auto-redirect after countdown
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (countdown > 1) {
-        setCountdown(countdown - 1);
-      } else {
-        navigate(`/login/${userType}`);
-      }
-    }, 1000);
+  // // Auto-redirect after countdown
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     if (countdown > 1) {
+  //       setCountdown(countdown - 1);
+  //     } else {
+  //       navigate(`/login/${userType}`);
+  //     }
+  //   }, 1000);
 
-    return () => clearTimeout(timer);
-  }, [countdown, navigate, userType]);
+  //   return () => clearTimeout(timer);
+  // }, [countdown, navigate, userType]);
 
   // Customize message based on user type
   const getUserTypeMessage = () => {
