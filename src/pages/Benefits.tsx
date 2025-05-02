@@ -51,10 +51,10 @@ export default function Benefits() {
   return (
     <section
       id="benefits"
-      className="w-full py-2 md:py-4 lg:py-12 bg-emerald-50"
+      className="w-full py-2 md:py-4 lg:py-12 bg-emerald-50 "
     >
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center ml-[80px]">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center ml-[80px] xxs:ml-[5px]">
           <div className="space-y-2">
             <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700">
               Our Impact
@@ -72,7 +72,7 @@ export default function Benefits() {
           {benefits.map((item, i) => (
             <div
               key={i}
-              className="flex flex-col items-center text-center rounded-lg border bg-card text-card-foreground shadow-sm ml-[40px] w-[320px]"
+              className="flex flex-col items-center text-center rounded-lg border bg-card text-card-foreground shadow-sm ml-[40px] xxs:ml-[7px] w-[320px] xxs:w-[280px]"
             >
               <div className="flex flex-col space-y-1.5 p-6">
                 <div className="p-2">{item.icon}</div>

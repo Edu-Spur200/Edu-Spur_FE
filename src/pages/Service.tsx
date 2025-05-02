@@ -14,10 +14,10 @@ export default function Services() {
   const [activeTab, setActiveTab] = useState("schools");
 
   return (
-    <section id="services" className="w-full md:pt-14 lg:pt-32">
+    <section id="services" className="w-full md:pt-14 lg:pt-32 xxs:mt-[500px]">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2 ml-[90px]">
+          <div className="space-y-2 ml-[90px] xxs:ml-[10px]">
             <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-[20px] text-emerald-700">
               Our Services
             </div>
@@ -30,8 +30,8 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12 pl-[50px]">
-          <div className="w-[600px] ">
+        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12 pl-[50px] xxs:pl-[10px] xxs:w-[100%]">
+          <div className="w-[600px] xxs:w-[100%]">
             <div className="flex w-full border-b">
               <button
                 onClick={() => setActiveTab("schools")}
@@ -273,7 +273,7 @@ export default function Services() {
               </div>
             )}
           </div>
-          <div className="space-y-4 ml-[120px]">
+          <div className="space-y-4 ml-[120px] xxs:ml-[0px]">
             <h3 className="text-2xl font-bold ">Why Choose Edu-Spur?</h3>
             <ul className="grid gap-3">
               {[

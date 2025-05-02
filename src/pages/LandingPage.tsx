@@ -7,7 +7,7 @@ import Services from "./Service";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="">
       <Hero />
       <Services />
       <Benefits />

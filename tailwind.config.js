@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: "320px",    // new custom small screen
-        '3xl': "1600px" // new custom large screen
+        'xxs': { 'raw': '(max-width: 768px)' },    // new custom small screen
+        'xs': "475px" // new custom large screen
       },
       colors: {
         border: "hsl(var(--border))",

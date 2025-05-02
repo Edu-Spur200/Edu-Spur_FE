@@ -1,14 +1,14 @@
 export default function CallToAction() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 border-t px-6">
+    <section className="w-full py-12 md:py-24 lg:py-32 border-t px-6 xxs:w-[100%]">
       <div className="container px-4 md:px-6">
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center w-[100%]">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700">
                 Join Us Today
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xxs:text-2xl">
                 Ready to Transform Education?
               </h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
@@ -26,7 +26,7 @@ export default function CallToAction() {
               </button>
             </div> */}
           </div>
-          <div className="mx-auto w-full max-w-[500px] lg:max-w-none">
+          <div className="bg-red-300 mx-auto w-full max-w-[500px] lg:max-w-none xxs:w-[100%] xxs:flex xxs:flex-wrap">
             <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
               <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="text-2xl font-semibold leading-none tracking-tight">
@@ -39,7 +39,7 @@ export default function CallToAction() {
               </div>
               <div className="p-6 space-y-4">
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
+                  <div className="space-y-2 xxs:w-full">
                     <label
                       htmlFor="first-name"
                       className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"

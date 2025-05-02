@@ -3,8 +3,8 @@ import logo from "../assets/edu.png";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b bg-red-500 px-2">
-      <div className=" flex h-[80px] items-center justify-between py-4 bg-green-200">
+    <header className="sticky top-0 z-40 border-b  px-2">
+      <div className=" flex h-[80px] items-center justify-between py-4 ">
         <div className="flex items-center gap-2">
             <img src={logo} alt="logo" className="h-[80px]" />
     
