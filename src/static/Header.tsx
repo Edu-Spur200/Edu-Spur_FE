@@ -3,10 +3,10 @@ import logo from "../assets/edu.png";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b bg-background px-10">
-      <div className="container flex h-[80px] items-center justify-between py-4">
+    <header className="sticky top-0 z-40 border-b bg-red-500 px-2">
+      <div className=" flex h-[80px] items-center justify-between py-4 bg-green-200">
         <div className="flex items-center gap-2">
-            <img src={logo} alt="logo" className="h-[130px]" />
+            <img src={logo} alt="logo" className="h-[80px]" />
     
         </div>
         {/* <nav className="hidden md:flex items-center gap-6">
