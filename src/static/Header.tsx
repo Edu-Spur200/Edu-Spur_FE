@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/edu.png";
+import logo from "../assets/IMG-20250502-WA0010-removebg-preview.png";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 bg-gray-100 px-[60px] xxs:px-0 xxs:w-[100%] ">
-      <div className=" flex h-[80px] items-center justify-between py-4 xxs:w-[92%]">
-        <div className="flex items-center mr-[20px] xxs:pl-[0px] ">
-            <img src={logo} alt="logo" className="h-[80px]" />
+    <header className="sticky top-0 z-40 bg-gray-50 px-[60px] xxs:px-0 xxs:w-[100%] overflow-x-hidden flex justify-center">
+      <div className=" flex h-[80px] items-center justify-between py-4 w-[90%] xxs:w-[88%] ">
+        <div className="flex items-center mr-[20px]">
+            <img src={logo} alt="logo" className="h-[45px]" />
     
         </div>
         {/* <nav className="hidden md:flex items-center gap-6">
@@ -40,7 +40,7 @@ export default function Header() {
             Log in
           </button> */}
           <Link to={"selcet-option"}>
-            <button className="h-10 px-4 py-2 text-sm font-medium text-white rounded-md bg-emerald-600 hover:bg-emerald-700">
+            <button className="h-10 px-4 py-2 text-sm font-medium text-white rounded-md bg-[#133b55] hover:bg-[#092030]">
               Get Started
             </button>
           </Link>

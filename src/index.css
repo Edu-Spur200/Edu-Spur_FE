@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+  /* === Primary Colors === */
+  --primary: 210 69% 11%;
+  --primary-foreground: 210 20% 96%;
+
+  /* === Secondary Colors === */
+  --secondary: 210 30% 20%;
+  --secondary-foreground: 210 15% 92%;
+
+  /* === Accent Colors === */
+  --accent: 195 85% 30%;
+  --accent-foreground: 0 0% 100%;
+
+  /* === Muted Colors === */
+  --muted: 210 20% 25%;
+  --muted-foreground: 210 10% 80%;
+
+  /* === Destructive (Error) Colors === */
+  --destructive: 0 80% 55%;
+  --destructive-foreground: 0 0% 100%;
+
+  /* === Background & Text === */
+  --background: 210 30% 7%;
+  --foreground: 210 10% 90%;
+
+  /* === Border/Input === */
+  --border: 210 15% 25%;
+  --input: 210 20% 20%;
+  --ring: 210 90% 40%;
+}
+
 /* Custom base styles */
 @layer base {
   body {

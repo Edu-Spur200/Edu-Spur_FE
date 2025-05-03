@@ -2,7 +2,7 @@
 import hero from "../assets/Flat illustration of a teacher in a class _ Premium AI-generated vector.jpeg";
 export default function Hero() {
   return (
-    <section className="w-[92vw] h-calc(100vh-80px) px-6 pt-[20px] ml-[40px] xxs:w-[99%] xxs:ml-0 overflow-x-hidden">
+    <section className="w-[92.5vw] h-calc(100vh-80px) px-6 pt-[20px] ml-[40px] xxs:w-[99%] xxs:ml-0 overflow-x-hidden ">
       {/* <div className="container px-4 md:px-6 bg-blue-500"> */}
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
           <div className="flex flex-col justify-center space-y-4">

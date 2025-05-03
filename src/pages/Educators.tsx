@@ -45,7 +45,7 @@ export default function Educators() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-700">
+            <div className="inline-block rounded-lg [#133b55] px-3 py-1 text-sm text-[#092030]">
               Our Educators
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -77,7 +77,7 @@ export default function Educators() {
                   />
                 </div>
                 <h3 className="text-lg font-semibold">{educator.name}</h3>
-                <p className="text-emerald-600 font-medium">{educator.role}</p>
+                <p className="text-[#133b55] font-medium">{educator.role}</p>
               </div>
               <div className="p-6 pt-0 text-center">
                 <p className="mb-4 text-sm text-muted-foreground">
@@ -103,7 +103,7 @@ export default function Educators() {
           ))}
         </div>
         <div className="flex justify-center">
-          <button className="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium text-white rounded-md bg-emerald-600 hover:bg-emerald-700">
+          <button className="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium text-white rounded-md bg-[#133b55] hover:bg-emerald-700">
             Browse All Educators
             <ArrowRight className="ml-2 h-4 w-4" />
           </button>

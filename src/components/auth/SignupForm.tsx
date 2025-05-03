@@ -197,7 +197,7 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
           </div>
           <a
             href="/"
-            className="text-emerald-600 hover:text-emerald-700 font-medium"
+            className="text-[#133b55] hover:text-[#092030] font-medium"
           >
             Back to Selection
           </a>
@@ -308,7 +308,7 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-2 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-md transition-colors"
+                  className="w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md transition-colors"
                 >
                   Create Account
                 </button>
@@ -320,7 +320,7 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
                 Already have an account?{" "}
                 <a
                   href={`/login/${userType}`}
-                  className="text-emerald-600 hover:text-emerald-700 font-medium"
+                  className="text-[#133b55] hover:text-[#092030] font-medium"
                 >
                   Log In
                 </a>

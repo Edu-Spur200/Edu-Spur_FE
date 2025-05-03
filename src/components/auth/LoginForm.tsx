@@ -136,7 +136,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ userType }) => {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-2 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-md transition-colors"
+                  className="w-full py-2 px-4 bg-[#133b55]hover:bg-[#133b55]text-white font-medium rounded-md transition-colors"
                 >
                   Log In
                 </button>

@@ -45,7 +45,7 @@ const SignupSuccess = () => {
       <header className="py-6 border-b bg-white">
         <div className="container mx-auto px-4 flex items-center">
           <Link to="/" className="flex items-center gap-2">
-            <GraduationCap className="h-8 w-8 text-emerald-600" />
+            <GraduationCap className="h-8 w-8 text-[#133b55]" />
             <span className="text-2xl font-bold">Edu-Spur</span>
           </Link>
         </div>
@@ -56,7 +56,7 @@ const SignupSuccess = () => {
           <div className="p-8 text-center">
             <div className="flex justify-center mb-6">
               <div className="h-20 w-20 rounded-full bg-emerald-100 flex items-center justify-center">
-                <CheckCircle className="h-12 w-12 text-emerald-600" />
+                <CheckCircle className="h-12 w-12 text-[#133b55]" />
               </div>
             </div>
 
@@ -65,7 +65,7 @@ const SignupSuccess = () => {
             </h1>
 
             {userName && (
-              <p className="text-lg text-emerald-600 font-medium mb-4">
+              <p className="text-lg text-[#133b55] font-medium mb-4">
                 Welcome to Edu-Spur, {userName}!
               </p>
             )}
@@ -75,7 +75,7 @@ const SignupSuccess = () => {
             <div className="space-y-4">
               <Link
                 to={`/login/${userType}`}
-                className="block w-full py-2 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-md text-center transition-colors"
+                className="block w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md text-center transition-colors"
               >
                 Log In Now <ArrowRight className="inline ml-1 h-4 w-4" />
               </Link>
@@ -92,13 +92,13 @@ const SignupSuccess = () => {
               <ul className="text-sm text-left space-y-2">
                 <li className="flex items-start gap-2">
                   <div className="mt-1 h-4 w-4 flex-shrink-0 rounded-full bg-emerald-100 flex items-center justify-center">
-                    <div className="h-2 w-2 rounded-full bg-emerald-600"></div>
+                    <div className="h-2 w-2 rounded-full bg-[#133b55]"></div>
                   </div>
                   <span>Complete your profile with additional information</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="mt-1 h-4 w-4 flex-shrink-0 rounded-full bg-emerald-100 flex items-center justify-center">
-                    <div className="h-2 w-2 rounded-full bg-emerald-600"></div>
+                    <div className="h-2 w-2 rounded-full bg-[#133b55]"></div>
                   </div>
                   <span>
                     Explore our platform features designed for {userType}s
@@ -106,7 +106,7 @@ const SignupSuccess = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="mt-1 h-4 w-4 flex-shrink-0 rounded-full bg-emerald-100 flex items-center justify-center">
-                    <div className="h-2 w-2 rounded-full bg-emerald-600"></div>
+                    <div className="h-2 w-2 rounded-full bg-[#133b55]"></div>
                   </div>
                   <span>Connect with our educational community</span>
                 </li>
