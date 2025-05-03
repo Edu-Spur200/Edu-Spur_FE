@@ -14,7 +14,7 @@ export default function Services() {
   const [activeTab, setActiveTab] = useState("schools");
 
   return (
-    <section id="services" className="w-full md:pt-14 lg:pt-32 xxs:mt-[500px]">
+    <section id="services" className="w-full md:pt-14 lg:pt-32 xxs:mt-[50px]  xxs:w-[95%] overflow-x-hidden ml-[60px] xxs:ml-0">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2 ml-[90px] xxs:ml-[10px]">
@@ -273,7 +273,7 @@ export default function Services() {
               </div>
             )}
           </div>
-          <div className="space-y-4 ml-[120px] xxs:ml-[0px]">
+          <div className="space-y-4 ml-[160px] xxs:ml-[0px]">
             <h3 className="text-2xl font-bold ">Why Choose Edu-Spur?</h3>
             <ul className="grid gap-3">
               {[

@@ -3,9 +3,9 @@ import logo from "../assets/edu.png";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b  px-2">
-      <div className=" flex h-[80px] items-center justify-between py-4 ">
-        <div className="flex items-center gap-2">
+    <header className="sticky top-0 z-40 bg-gray-100 px-[60px] xxs:px-0 xxs:w-[100%] ">
+      <div className=" flex h-[80px] items-center justify-between py-4 xxs:w-[92%]">
+        <div className="flex items-center mr-[20px] xxs:pl-[0px] ">
             <img src={logo} alt="logo" className="h-[80px]" />
     
         </div>

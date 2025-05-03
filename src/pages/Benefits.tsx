@@ -51,7 +51,7 @@ export default function Benefits() {
   return (
     <section
       id="benefits"
-      className="w-full py-2 md:py-4 lg:py-12 bg-emerald-50 "
+      className="w-full py-2 md:py-4 lg:py-12 bg-emerald-50 xxs:w-[100%] overflow-x-hidden pl-[60px] xxs:pl-0"
     >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center ml-[80px] xxs:ml-[5px]">
