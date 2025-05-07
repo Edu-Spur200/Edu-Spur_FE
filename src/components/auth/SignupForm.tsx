@@ -1,4 +1,4 @@
-import { registerSchool } from "../../APIs/SchoolSignup";
+// import { registerSchool } from "../../APIs/SchoolSignup";
 import logo from "../../assets/IMG-20250502-WA0010-removebg-preview.png";
 import { useState } from "react";
 
@@ -313,9 +313,7 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md transition-colors" onClick={() => {
-                    registerSchool()
-                  }}
+                  className="w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md transition-colors"
                 >
                   Create Account
                 </button>
