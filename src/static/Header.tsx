@@ -3,7 +3,7 @@ import logo from "../assets/IMG-20250502-WA0010-removebg-preview.png";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 bg-gray-50 px-[60px] xxs:px-0 xxs:w-[100%] overflow-x-hidden flex justify-center">
+    <header className="sticky top-0 z-40 bg-gray-50 px-[60px] xxs:px-0 xxs:w-[100%] overflow-x-hidden flex justify-center bg-blue-500">
       <div className=" flex h-[80px] items-center justify-between py-4 w-[90%] xxs:w-[88%] ">
         <div className="flex items-center mr-[20px]">
             <img src={logo} alt="logo" className="h-[45px]" />

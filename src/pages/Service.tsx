@@ -14,7 +14,7 @@ export default function Services() {
   const [activeTab, setActiveTab] = useState("schools");
 
   return (
-    <section id="services" className="w-full md:pt-14 lg:pt-32 xxs:mt-[50px]  xxs:w-[95%] overflow-x-hidden ml-[160px] xxs:ml-0 xs:ml-[5px] x:ml-[10px]  flex justify-center">
+    <section id="services" className="w-[98%] md:pt-14 lg:pt-32 xxs:mt-[50px]  xxs:w-[95%] overflow-x-hidden xxs:ml-0 xs:ml-[5px] x:ml-[10px]  flex justify-center ">
       <div className="container px-2 md:px-6 ">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2 ml-[90px] xxs:ml-[10px]">

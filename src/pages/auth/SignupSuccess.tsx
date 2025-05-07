@@ -30,11 +30,11 @@ const SignupSuccess = () => {
   const getUserTypeMessage = () => {
     switch (userType) {
       case "school":
-        return "Your school account has been created successfully. You can now access our platform to find qualified educators and manage your educational needs.";
+        return "We’re working on more exciting features just for you. While we build, kindly follow us on social media and encourage others to do the same. Also, feel free to invite others to sign up—your support fuels our growth!"
       case "parent":
-        return "Your parent account has been created successfully. You can now access our platform to find tutors and educational resources for your children.";
+        return "We’re working on more exciting features just for you. While we build, kindly follow us on social media and encourage others to do the same. Also, feel free to invite others to sign up—your support fuels our growth!";
       case "teacher":
-        return "Your teacher account has been created successfully. You can now access our platform to connect with schools and students who need your expertise.";
+        return "We’re working on more exciting features just for you. While we build, kindly follow us on social media and encourage others to do the same. Also, feel free to invite others to sign up—your support fuels our growth!";
       default:
         return "Your account has been created successfully. You can now access our platform.";
     }

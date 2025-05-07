@@ -1,4 +1,5 @@
-import logo from "../../assets/edu.png";
+import { registerSchool } from "../../APIs/SchoolSignup";
+import logo from "../../assets/IMG-20250502-WA0010-removebg-preview.png";
 import { useState } from "react";
 
 interface FormData {
@@ -51,6 +52,10 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
     e.preventDefault();
     onSubmit(formData);
   };
+
+  const registerSchool = () => {
+    registerSchool()
+  }
 
   const renderUserTypeSpecificFields = () => {
     switch (userType) {
@@ -192,8 +197,8 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
     <div className="min-h-screen bg-gradient-to-b from-white to-emerald-50 flex flex-col">
       <header className="border-b bg-white">
         <div className="container mx-auto px-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <img src={logo} alt="logo" className="h-[100px]" />
+          <div className="flex items-center gap-2 py-2">
+            <img src={logo} alt="logo" className="h-[50px] xs:h-[35px]" />
           </div>
           <a
             href="/"
@@ -308,7 +313,9 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md transition-colors"
+                  className="w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md transition-colors" onClick={() => {
+                    registerSchool()
+                  }}
                 >
                   Create Account
                 </button>

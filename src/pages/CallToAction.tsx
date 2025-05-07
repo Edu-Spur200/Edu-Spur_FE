@@ -1,6 +1,6 @@
 export default function CallToAction() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 border-t px-4 xxs:w-[100%] overflow-x-hidden ml-[40px] xxs:ml-0">
+    <section className="w-full py-12 md:py-24 lg:py-32 border-t px-4 xxs:w-[100%] overflow-x-hidden ml-auto xxs:ml-0">
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center w-[100%]">
           <div className="flex flex-col justify-center space-y-4">
@@ -48,7 +48,7 @@ export default function CallToAction() {
                     </label>
                     <input
                       id="first-name"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="flex h-10 w-full rounded-md border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 outline-none border-none"
                       placeholder="Enter your first name"
                     />
                   </div>
