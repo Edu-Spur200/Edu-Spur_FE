@@ -72,7 +72,7 @@ export default function Benefits() {
           {benefits.map((item, i) => (
             <div
               key={i}
-              className="flex flex-col items-center text-center rounded-lg border bg-card text-card-foreground shadow-sm ml-[40px] xxs:ml-[7px] l:w-[310px] l:ml-[45px] xxs:w-[280px] xs:w-[330px] x:w-[377px] x:ml-[10px] xs:ml-[9px]"
+              className="flex flex-col items-center text-center rounded-lg border bg-card text-card-foreground shadow-sm ml-[40px] xxs:ml-[7px] l:w-[310px] l:ml-[45px] xxs:w-[280px] xs:w-[346px] x:w-[377px] x:ml-[10px] xs:ml-[9px]"
             >
               <div className="flex flex-col space-y-1.5 p-6">
                 <div className="p-2">{item.icon}</div>

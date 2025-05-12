@@ -10,11 +10,13 @@ interface FormData {
   confirmPassword: string;
   schoolName: string;
   schoolType: string;
-  position: string;
+  contactPersonName: string;
   subjectClassCombinations: string;
   childrenCount: string;
   subjects: string;
+  qualification: string;
   experience: string;
+  location: string;
 }
 
 interface SignupFormProps {
@@ -22,7 +24,7 @@ interface SignupFormProps {
   onSubmit: (data: FormData) => void;
 }
 
-const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
+const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit  } ) => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -32,11 +34,13 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
     // Additional fields based on user type
     schoolName: "",
     schoolType: "",
-    position: "",
+    contactPersonName: "",
     subjectClassCombinations: "",
     childrenCount: "",
     subjects: "",
+    qualification: "",
     experience: "",
+    location: "",
   });
 
   const handleChange = (
@@ -53,9 +57,8 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
     onSubmit(formData);
   };
 
-  const registerSchool = () => {
-    registerSchool()
-  }
+ 
+  
 
   const renderUserTypeSpecificFields = () => {
     switch (userType) {
@@ -96,6 +99,20 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
               />
             </div>
             <div className="space-y-2">
+              <label htmlFor="qualification" className="text-sm font-medium">
+                Qualification
+              </label>
+              <input
+                type="string"
+                id="qualification"
+                name="qualification"
+                value={formData.qualification}
+                onChange={handleChange}
+                placeholder="Enter your qualification"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              />
+            </div>
+            <div className="space-y-2">
               <label htmlFor="experience" className="text-sm font-medium">
                 Years of Experience
               </label>
@@ -106,6 +123,20 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
                 value={formData.experience}
                 onChange={handleChange}
                 placeholder="Enter years of experience"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="location" className="text-sm font-medium">
+                Location
+              </label>
+              <input
+                type="string"
+                id="location"
+                name="location"
+                value={formData.location}
+                onChange={handleChange}
+                placeholder="Enter your location"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
               />
             </div>
@@ -145,14 +176,14 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
               </select>
             </div>
             <div className="space-y-2">
-              <label htmlFor="position" className="text-sm font-medium">
+              <label htmlFor="contactPersonName" className="text-sm font-medium">
                 Your Position
               </label>
               <input
                 type="text"
-                id="position"
-                name="position"
-                value={formData.position}
+                id="contactPersonName"
+                name="contactPersonName"
+                value={formData.contactPersonName}
                 onChange={handleChange}
                 placeholder="Enter your position"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
@@ -291,24 +322,7 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
                 </p>
               </div>
 
-              <div className="space-y-2">
-                <label
-                  htmlFor="confirmPassword"
-                  className="text-sm font-medium"
-                >
-                  Confirm Password
-                </label>
-                <input
-                  type="password"
-                  id="confirmPassword"
-                  name="confirmPassword"
-                  value={formData.confirmPassword}
-                  onChange={handleChange}
-                  placeholder="Confirm your password"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  required
-                />
-              </div>
+          
 
               <div className="pt-2">
                 <button
