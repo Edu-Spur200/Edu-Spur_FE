@@ -13,7 +13,8 @@ module.exports = {
         xxs: { raw: "(max-width: 768px)" }, // new custom small screen
         xs: "375px", 
         x: "425px",
-        l: "1054px", 
+        s: "768px",
+        l: "1024px", 
       },
       colors: {
         border: "hsl(var(--border))",

@@ -51,7 +51,7 @@ export default function Benefits() {
   return (
     <section
       id="benefits"
-      className="w-full py-6 md:py-4 lg:py-12 bg-gray-50 xxs:w-[100%] overflow-x-hidden pl-[60px] xxs:pl-0"
+      className="w-full py-6 md:py-4 lg:py-12 bg-gray-50 xxs:w-[100%] overflow-x-hidden pl-[60px] xxs:pl-0 "
     >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center ml-[80px] xxs:ml-[5px]">
@@ -68,11 +68,11 @@ export default function Benefits() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 l:flex l:flex-wrap ">
           {benefits.map((item, i) => (
             <div
               key={i}
-              className="flex flex-col items-center text-center rounded-lg border bg-card text-card-foreground shadow-sm ml-[40px] xxs:ml-[7px] l:w-[310px] l:ml-[45px] xxs:w-[280px] xs:w-[346px] x:w-[377px] x:ml-[10px] xs:ml-[9px]"
+              className="flex  flex-col items-center text-center rounded-lg border bg-card text-card-foreground shadow-sm ml-[40px] xxs:ml-[7px] l:w-[395px] l:ml-[45px] xxs:w-[300px] xs:w-[366px] x:w-[398px] x:ml-[10px] xs:ml-[9px] s:w-[340px]"
             >
               <div className="flex flex-col space-y-1.5 p-6">
                 <div className="p-2">{item.icon}</div>
