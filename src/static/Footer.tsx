@@ -7,7 +7,8 @@ export default function Footer() {
       <div className="container flex flex-col gap-8 px-4 py-10 md:px-6 lg:flex-row lg:gap-12">
         <div className="flex flex-col gap-4 lg:w-1/3">
           <div className="flex items-center gap-2">
-            <GraduationCap className="h-6 w-6 text-[#133b55]" />
+            {/* <GraduationCap className="h-6 w-6 text-[#133b55]" /> */}
+            <img src="../../public/IMG-20250502-WA0010.jpg" alt="" className="w-[45px] h-[40px]"/>
             <span className="text-xl font-bold">Edu-Spur</span>
           </div>
           <p className="text-sm text-muted-foreground">

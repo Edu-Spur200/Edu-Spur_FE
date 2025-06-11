@@ -72,7 +72,7 @@ const SignupSuccess = () => {
 
             <p className="text-gray-600 mb-6">{getUserTypeMessage()}</p>
 
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <Link
                 to={`/login/${userType}`}
                 className="block w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md text-center transition-colors"
@@ -111,7 +111,7 @@ const SignupSuccess = () => {
                   <span>Connect with our educational community</span>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>
