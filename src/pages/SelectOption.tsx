@@ -30,9 +30,16 @@ const SelectOption = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
+             <RoleCard
+              icon={<UserRound className="h-12 w-12 text-[#133b55]" />}
+              title="Teacher"
+              description="Share your expertise, find teaching opportunities, and advance your educational career."
+              signupLink="/signup/teacher"
+              loginLink="/login/teacher"
+            />
             <RoleCard
               icon={<School className="h-12 w-12 text-[#133b55]" />}
-              title="Schools"
+              title="School"
               description="Find qualified educators, enhance your curriculum, and provide cutting-edge education."
               signupLink="/signup/school"
               loginLink="/login/school"
@@ -40,19 +47,13 @@ const SelectOption = () => {
 
             <RoleCard
               icon={<Users className="h-12 w-12 text-[#133b55]" />}
-              title="Parents"
+              title="Parent"
               description="Connect with tutors, get homeschooling support, help your child build awesome skills."
               signupLink="/signup/parent"
               loginLink="/login/parent"
             />
 
-            <RoleCard
-              icon={<UserRound className="h-12 w-12 text-[#133b55]" />}
-              title="Teachers"
-              description="Share your expertise, find teaching opportunities, and advance your educational career."
-              signupLink="/signup/teacher"
-              loginLink="/login/teacher"
-            />
+           
           </div>
         </div>
       </main>
@@ -92,7 +93,7 @@ const RoleCard = ({
             to={signupLink}
             className="block w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md text-center transition-colors"
           >
-            Sign Up as {title}
+            Sign Up as a {title}
           </Link>
           <Link
             to={loginLink}
