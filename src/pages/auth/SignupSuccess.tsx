@@ -1,10 +1,11 @@
 import {  useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { CheckCircle, GraduationCap, ArrowRight } from "lucide-react";
+import { CheckCircle, GraduationCap } from "lucide-react";
 
 const SignupSuccess = () => {
   const [countdown, setCountdown] = useState(5);
   console.log(setCountdown);
+  countdown
 
   // const navigate = useNavigate();
   const location = useLocation();
