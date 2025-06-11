@@ -86,7 +86,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit  } ) => {
           <>
             <div className="space-y-2">
               <label htmlFor="subjects" className="text-sm font-medium">
-                Subjects Taught
+                Subjects You Teach
               </label>
               <input
                 type="text"
@@ -94,7 +94,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit  } ) => {
                 name="subjects"
                 value={formData.subjects}
                 onChange={handleChange}
-                placeholder="Enter subjects taught"
+                placeholder="Enter the subjects you teach"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
               />
             </div>
@@ -226,16 +226,16 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-emerald-50 flex flex-col">
-      <header className="border-b bg-white">
+      <header className="border-b bg-white py-2">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-2 py-2">
             <img src={logo} alt="logo" className="h-[50px] xs:h-[35px]" />
           </div>
           <a
             href="/"
-            className="text-[#133b55] hover:text-[#092030] font-medium"
+            className="h-10 px-4 py-2 text-sm font-medium text-white rounded-md bg-[#133b55] hover:bg-[#092030]"
           >
-            Back to Selection
+            Home
           </a>
         </div>
       </header>

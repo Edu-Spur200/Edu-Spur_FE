@@ -35,14 +35,14 @@ const SelectOption = () => {
               title="Teacher"
               description="Share your expertise, find teaching opportunities, and advance your educational career."
               signupLink="/signup/teacher"
-              loginLink="/login/teacher"
+              // loginLink="/login/teacher"
             />
             <RoleCard
               icon={<School className="h-12 w-12 text-[#133b55]" />}
               title="School"
               description="Find qualified educators, enhance your curriculum, and provide cutting-edge education."
               signupLink="/signup/school"
-              loginLink="/login/school"
+              // loginLink="/login/school"
             />
 
             <RoleCard
@@ -50,7 +50,7 @@ const SelectOption = () => {
               title="Parent"
               description="Connect with tutors, get homeschooling support, help your child build awesome skills."
               signupLink="/signup/parent"
-              loginLink="/login/parent"
+              // loginLink="/login/parent"
             />
 
            
@@ -72,7 +72,7 @@ interface RoleCardProps {
   title: string;
   description: string;
   signupLink: string;
-  loginLink: string;
+  // loginLink: string;
 }
 
 const RoleCard = ({
@@ -80,7 +80,7 @@ const RoleCard = ({
   title,
   description,
   signupLink,
-  loginLink,
+  // loginLink,
 }: RoleCardProps) => {
   return (
     <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300">
@@ -95,12 +95,12 @@ const RoleCard = ({
           >
             Sign Up as a {title}
           </Link>
-          <Link
+          {/* <Link
             to={loginLink}
             className="block w-full py-2 px-4 border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium rounded-md text-center transition-colors"
           >
             Log In
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

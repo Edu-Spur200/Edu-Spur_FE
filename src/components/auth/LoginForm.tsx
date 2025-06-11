@@ -56,7 +56,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ userType }) => {
             to="/"
             className="text-emerald-600 hover:text-emerald-700 font-medium"
           >
-            Back to Selection
+            Home
           </Link>
         </div>
       </header>
