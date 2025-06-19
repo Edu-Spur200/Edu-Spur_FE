@@ -55,7 +55,7 @@ export default function Benefits() {
     >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center ml-[80px] xxs:ml-[5px]">
-          <div className="space-y-2">
+          <div className="space-y-2"  data-aos="fade-down" data-aos-duration="1000">
             <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm text-[#092030]">
               Our Impact
             </div>
@@ -73,8 +73,8 @@ export default function Benefits() {
             <div
               key={i}
               className="flex  flex-col items-center text-center rounded-lg border bg-card text-card-foreground shadow-sm ml-[40px] xxs:ml-[7px] l:w-[395px] l:ml-[45px] xxs:w-[300px] xs:w-[366px] x:w-[398px] x:ml-[10px] xs:ml-[9px] s:w-[340px]"
-            >
-              <div className="flex flex-col space-y-1.5 p-6">
+             data-aos="fade-up" data-aos-duration="1500">
+              <div className="flex flex-col space-y-1.5 p-6" >
                 <div className="p-2">{item.icon}</div>
                 <h3 className="text-lg font-semibold">{item.title}</h3>
               </div>
