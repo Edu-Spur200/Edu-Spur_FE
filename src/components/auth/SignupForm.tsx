@@ -241,7 +241,7 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
       </header>
 
       <main className="flex-1 container mx-auto px-4 py-12">
-        <div className="max-w-md mx-auto bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
+        <div className="max-w-md mx-auto bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden" data-aos="fade-down" data-aos-duration="1500">
           <div className="p-6">
             <h1 className="text-2xl font-bold mb-6 text-center">
               Sign Up as a {userTypeTitle[userType]}
@@ -327,7 +327,7 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md transition-colors"
+                  className="w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md transition-colors playbtn"
                 >
                   Create Account
                 </button>

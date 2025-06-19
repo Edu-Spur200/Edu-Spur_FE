@@ -19,7 +19,7 @@ const SelectOption = () => {
 
       <main className="flex-1 container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12" data-aos="fade-down" data-aos-duration="1500">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
               Join Our Educational Community
             </h1>
@@ -29,10 +29,10 @@ const SelectOption = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6" data-aos="fade-up" data-aos-duration="1500">
              <RoleCard
               icon={<UserRound className="h-12 w-12 text-[#133b55]" />}
-              title="Teacher"
+              title="Teacher" 
               description="Share your expertise, find teaching opportunities, and advance your educational career."
               signupLink="/signup/teacher"
               // loginLink="/login/teacher"
@@ -91,7 +91,7 @@ const RoleCard = ({
         <div className="mt-auto space-y-3 w-full">
           <Link
             to={signupLink}
-            className="block w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md text-center transition-colors"
+            className="block w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md text-center transition-colors duration-300 hover:scale-105 hover:shadow-lg"
           >
             Sign Up as a {title}
           </Link>

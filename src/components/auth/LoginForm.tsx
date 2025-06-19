@@ -62,7 +62,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ userType }) => {
       </header>
 
       <main className="flex-1 container mx-auto px-[30px] py-12">
-        <div className="max-w-md mx-auto bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
+        <div className="max-w-md mx-auto bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden" data-aos="fade-down" data-aos-duration="1000">
           <div className="p-6">
             <h1 className="text-2xl font-bold mb-6 text-center">
               Log In as a {userTypeTitle[userType]}
@@ -136,7 +136,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ userType }) => {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-2 px-4 bg-[#133b55]hover:bg-[#133b55]text-white font-medium rounded-md transition-colors"
+                  className="w-full py-2 px-4 bg-[#133b55]hover:bg-[#133b55]text-white font-medium rounded-md transition-colors duration-300 hover:scale-105 hover:shadow-lg"
                 >
                   Log In
                 </button>
@@ -158,7 +158,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ userType }) => {
         </div>
       </main>
 
-      <footer className="py-6 border-t bg-white">
+      <footer className="py-6 border-t bg-white ">
         <div className="container mx-auto px-4 text-center text-sm text-gray-500">
           © 2024 Edu-Spur. All rights reserved.
         </div>

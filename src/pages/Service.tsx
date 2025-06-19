@@ -17,7 +17,8 @@ export default function Services() {
     <section id="services" className="w-[98%] md:pt-14 lg:pt-32 xxs:mt-[50px]  xxs:w-[95%] overflow-x-hidden xxs:ml-0 xs:ml-[5px] x:ml-[10px]  flex justify-center ">
       <div className="container px-2 md:px-6 ">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2 ml-[90px] xxs:ml-[10px]">
+          <div className="space-y-2 ml-[90px] xxs:ml-[10px]"  data-aos="fade-down"
+          data-aos-duration="1500">
             <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-[20px] text-[#092030]">
               Our Services
             </div>
@@ -31,7 +32,7 @@ export default function Services() {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12 pl-[50px] xxs:pl-[10px] xxs:w-[100%]">
-          <div className="w-[600px] xxs:w-[100%]">
+          <div className="w-[600px] xxs:w-[100%]"  data-aos="fade-right" data-aos-duration="1500">
             <div className="flex w-full border-b">
               <button
                 onClick={() => setActiveTab("schools")}
@@ -273,7 +274,7 @@ export default function Services() {
               </div>
             )}
           </div>
-          <div className="space-y-4 ml-[160px] xxs:ml-[0px]">
+          <div className="space-y-4 ml-[160px] xxs:ml-[0px]"  data-aos="fade-left" data-aos-duration="1500">
             <h3 className="text-2xl font-bold ">Why Choose Edu-Spur?</h3>
             <ul className="grid gap-3">
               {[

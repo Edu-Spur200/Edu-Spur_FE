@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@types/axios": "^0.14.4",
+    "aos": "^2.3.4",
     "axios": "^1.9.0",
     "lucide-react": "^0.487.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.5.0"
+    "react-router-dom": "^7.5.0",
+    "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
