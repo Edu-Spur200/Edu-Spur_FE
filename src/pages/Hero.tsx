@@ -1,14 +1,26 @@
 // import { Star } from "lucide-react";
 import hero from "../assets/Flat illustration of a teacher in a class _ Premium AI-generated vector.jpeg";
+import { TypeAnimation } from "react-type-animation";
+
 export default function Hero() {
   return (
     <section className="w-[92.5vw] h-calc(100vh-80px) px-6 pt-[20px] ml-[40px] xxs:w-[99%] xxs:ml-0 overflow-x-hidden">
       {/* <div className="container px-4 md:px-6 bg-blue-500"> */}
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-          <div className="flex flex-col justify-center space-y-4">
-            <div className="space-y-2">
+          <div className="flex flex-col justify-center space-y-4"  data-aos="fade-right"
+          data-aos-duration="1500" data-aos-delay="200">
+            <div className="space-y-2 text-focus-in">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                Connecting Exceptional Educators with Eager Learners
+                <TypeAnimation
+                sequence={[
+                  'Connecting Exceptional Educators with Eager Learners',
+                  1000,
+                ]}
+                wrapper="span"
+                speed={30}
+                style={{ display: 'inline-block' }}
+                repeat={0} cursor={false}
+              />
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
                 Edu-Spur bridges educational gaps by providing qualified
@@ -54,13 +66,14 @@ export default function Hero() {
               </div>
             </div> */}
           </div>
-          <div className="mx-auto w-full max-w-[500px] lg:max-w-none">
+          <div className="mx-auto w-full max-w-[500px] lg:max-w-none" data-aos="fade-left"
+          data-aos-duration="1500" data-aos-delay="200">
             <img
               src={hero}
               alt="Classroom with teacher and students"
               // width={150}
               // height={20}
-              className="w-[600px] h-[500px] rounded-xl object-cover shadow-xl"
+              className="w-[600px] h-[500px] rounded-xl object-cover shadow-xl heartbeat" 
             />
           </div>
         </div>

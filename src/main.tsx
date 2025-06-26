@@ -5,6 +5,12 @@ import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import { mainRouter } from "./router/mainRouter.tsx";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={mainRouter} />
