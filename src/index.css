@@ -112,19 +112,3 @@
   }
 }
 
-.playbtn {
-  transition: all 0.3s ease-in-out 0s;
-  box-shadow: #95b1b0 0px 0px 0px 0px;
-  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
-  animation-delay: 2s;
-}
-
-.playbtn:is(:hover, :focus) {
-  transform: scale(1.2);
-}
-
-@keyframes pulse {
-  100% {
-    box-shadow: 0 0 0 45px rgba(193,244,246,0); 
-  }
-}
