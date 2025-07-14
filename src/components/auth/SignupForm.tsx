@@ -24,7 +24,7 @@ interface SignupFormProps {
   onSubmit: (data: FormData) => void;
 }
 
-const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit  } ) => {
+const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -57,8 +57,8 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit  } ) => {
     onSubmit(formData);
   };
 
- 
-  
+
+
 
   const renderUserTypeSpecificFields = () => {
     switch (userType) {
@@ -322,7 +322,7 @@ Tech instructor - HTML / CSS - SSS 1 to SSS3."
                 </p>
               </div>
 
-          
+
 
               <div className="pt-2">
                 <button
