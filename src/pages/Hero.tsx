@@ -10,7 +10,7 @@ export default function Hero() {
           <div className="flex flex-col justify-center space-y-4"  data-aos="fade-right"
           data-aos-duration="1500" data-aos-delay="200">
             <div className="space-y-2 text-focus-in">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none mb-[20px]">
                 <TypeAnimation
                 sequence={[
                   'Connecting Exceptional Educators with Eager Learners',
@@ -67,13 +67,13 @@ export default function Hero() {
             </div> */}
           </div>
           <div className="mx-auto w-full max-w-[500px] lg:max-w-none" data-aos="fade-left"
-          data-aos-duration="1500" data-aos-delay="200">
+          data-aos-duration="1900" data-aos-delay="800">
             <img
               src={hero}
               alt="Classroom with teacher and students"
               // width={150}
               // height={20}
-              className="w-[600px] h-[500px] rounded-xl object-cover shadow-xl heartbeat" 
+              className="w-[600px] h-[500px] rounded-xl object-cover shadow-xl" 
             />
           </div>
         </div>
