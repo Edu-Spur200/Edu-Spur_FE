@@ -1,10 +1,10 @@
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import SignupForm from "../../components/auth/SignupForm";
 import { registerParent } from "../../APIs/SchoolSignup";
 import { toast } from "react-toastify";
 
 const ParentSignup = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleSubmit = async (formData: any) => {
     try {

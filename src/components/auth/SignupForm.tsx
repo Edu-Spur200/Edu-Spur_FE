@@ -11,6 +11,8 @@ interface FormData {
   schoolName: string;
   schoolType: string;
   contactPersonName: string;
+  contactPersonRole: string;
+  teachersNeeded : string;
   subjectClassCombinations: string;
   childrenCount: string;
   subjects: string;
@@ -37,6 +39,8 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
     schoolName: "",
     schoolType: "",
     contactPersonName: "",
+    contactPersonRole : "",
+    teachersNeeded : "",
     subjectClassCombinations: "",
     childrenCount: "",
     subjects: "",
@@ -221,7 +225,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
               />
             </div>
             <div className="space-y-2">
-              <label htmlFor="contactPersonRole" className="text-sm font-medium">
+              <label htmlFor="contactPersonName" className="text-sm font-medium">
                 Your Role
               </label>
               <input
