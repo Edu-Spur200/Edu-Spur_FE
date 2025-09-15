@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/IMG-20250502-WA0010-removebg-preview.png";
+import logo from "../assets/WhatsApp Image 2025-07-16 at 4.16.21 AM.jpeg";
 import { Link } from "react-router-dom";
 import { School, Users, UserRound } from "lucide-react";
 
@@ -11,7 +11,7 @@ const SelectOption = () => {
           <div className="flex items-center gap-2">
             <Link to="/" className="hover:cursor-pointer">
 
-              <img src={logo} alt="logo" className="h-[45px]" />
+              <img src={logo} alt="logo" className="h-[35px] xxs:h-[25px]" />
             </Link>
           </div>
         </div>

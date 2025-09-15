@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import img from "../assets/WhatsApp Image 2025-07-16 at 4.16.21 AM.jpeg"
 
 export default function Footer() {
   return (
@@ -7,8 +8,8 @@ export default function Footer() {
         <div className="flex flex-col gap-4 lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
           <div className="flex items-center gap-2">
             {/* <GraduationCap className="h-6 w-6 text-[#133b55]" /> */}
-            <img src="../../public/IMG-20250502-WA0010.jpg" alt="" className="w-[45px] h-[40px]" data-aos="zoom-in" data-aos-delay="600"/>
-            <span className="text-xl font-bold">Edu-Spur</span>
+            <img src={img} alt="" className=" h-[30px] xxs:h-[20px]" data-aos="zoom-in" data-aos-delay="600"/>
+            {/* <span className="text-xl font-bold">Edu-Spur</span> */}
           </div>
           <p className="text-sm text-muted-foreground">
             Empowering schools, parents, and students by connecting them with
