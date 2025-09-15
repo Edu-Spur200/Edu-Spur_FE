@@ -1,11 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import SignupForm from "../../components/auth/SignupForm";
-import { registerTeacher } from "../../APIs/SchoolSignup";
+// import { registerTeacher } from "../../APIs/SchoolSignup";
 import { useState } from "react";
 
 const TeacherSignup = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
+  console.log(isLoading);
+  
   const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (formData: any) => {
