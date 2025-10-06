@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* === Primary Colors === */
+  --primary: 210 69% 11%;
+  --primary-foreground: 210 20% 96%;
+
+  /* === Secondary Colors === */
+  --secondary: 210 30% 20%;
+  --secondary-foreground: 210 15% 92%;
+
+  /* === Accent Colors === */
+  --accent: 195 85% 30%;
+  --accent-foreground: 0 0% 100%;
+
+  /* === Muted Colors === */
+  --muted: 210 20% 25%;
+  --muted-foreground: 210 10% 80%;
+
+  /* === Destructive (Error) Colors === */
+  --destructive: 0 80% 55%;
+  --destructive-foreground: 0 0% 100%;
+
+  /* === Background & Text === */
+  --background: 210 30% 7%;
+  --foreground: 210 10% 90%;
+
+  /* === Border/Input === */
+  --border: 210 15% 25%;
+  --input: 210 20% 20%;
+  --ring: 210 90% 40%;
+}
+
+/* Custom base styles */
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .text-muted-foreground {
+    @apply text-gray-500;
+  }
+  .bg-card {
+    @apply bg-white;
+  }
+  .text-card-foreground {
+    @apply text-gray-900;
+  }
+  .bg-background {
+    @apply bg-white;
+  }
+  .bg-accent {
+    @apply bg-gray-100;
+  }
+  .text-accent-foreground {
+    @apply text-gray-900;
+  }
+  .border-input {
+    @apply border-gray-300;
+  }
+  .ring-offset-background {
+    @apply ring-offset-white;
+  }
+}
+
+.text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.heartbeat {
+  animation: heartbeat 2.5s ease-in-out infinite both;
+  animation-delay: 4s;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.90);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.97);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.86);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+

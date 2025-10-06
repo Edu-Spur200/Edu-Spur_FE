@@ -1,0 +1,451 @@
+// import { registerSchool } from "../../APIs/SchoolSignup";
+import logo from "../../assets/WhatsApp Image 2025-07-16 at 4.16.21 AM.jpeg";
+import { useState } from "react";
+
+interface FormData {
+  name: string;
+  email: string;
+  phoneNumber: string; // Added phone number field
+  password: string;
+  // confirmPassword: string;
+  schoolName: string;
+  schoolType: string;
+  contactPersonName: string;
+  contactPersonRole: string;
+  teachersNeeded : string;
+  subjectClassCombinations: string;
+  childrenCount: string;
+  subjects: string;
+  qualification: string;
+  experience: string;
+  location: string;
+}
+
+interface SignupFormProps {
+  userType: "parent" | "teacher" | "school";
+  onSubmit: (data: FormData) => void;
+}
+
+const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
+  const [formData, setFormData] = useState<FormData>({
+    email: "",
+    phoneNumber: "", // Initialize phone number field
+    password: "",
+    location: "",
+
+    // confirmPassword: "", 
+    // Additional fields based on user type
+    name: "",
+    schoolName: "",
+    schoolType: "",
+    contactPersonName: "",
+    contactPersonRole : "",
+    teachersNeeded : "",
+    subjectClassCombinations: "",
+    childrenCount: "",
+    subjects: "",
+    qualification: "",
+    experience: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onSubmit(formData);
+  };
+
+  let locationPlaceholderText = "";
+
+  switch (userType) {
+    case "school":
+      locationPlaceholderText = "Enter the location of your school";
+      break;
+    case "teacher":
+    case "parent":
+      locationPlaceholderText = "Enter your location";
+      break;
+    default:
+      locationPlaceholderText = "Enter your location";
+  }
+
+  let emailPlaceholderText = "";
+
+  switch (userType) {
+    case "school":
+      emailPlaceholderText = "Enter your school's email address";
+      break;
+    case "teacher":
+    case "parent":
+      emailPlaceholderText = "Enter your email address";
+      break;
+    default:
+      emailPlaceholderText = "Enter your email address";
+  }
+
+
+
+  const renderUserTypeSpecificFields = () => {
+    switch (userType) {
+      case "parent":
+        return (
+          <>
+            <div className="space-y-2">
+              <label htmlFor="name" className="text-sm font-medium">
+                Full Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Enter your full name"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                required
+              />
+            </div>
+          </>
+        );
+      case "teacher":
+        return (
+          <>
+            <div className="space-y-2">
+              <label htmlFor="name" className="text-sm font-medium">
+                Full Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Enter your full name"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                required
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="subjects" className="text-sm font-medium">
+                Subjects You Teach
+              </label>
+              <input
+                type="text"
+                id="subjects"
+                name="subjects"
+                value={formData.subjects}
+                onChange={handleChange}
+                placeholder="Enter the subjects you teach"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="qualification" className="text-sm font-medium">
+                Qualification
+              </label>
+              <input
+                type="string"
+                id="qualification"
+                name="qualification"
+                value={formData.qualification}
+                onChange={handleChange}
+                placeholder="Enter your qualification"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="experience" className="text-sm font-medium">
+                Years of Experience
+              </label>
+              <input
+                type="number"
+                id="experience"
+                name="experience"
+                value={formData.experience}
+                onChange={handleChange}
+                placeholder="Enter years of experience"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500" min={1}
+              />
+            </div>
+
+          </>
+        );
+      case "school":
+        return (
+          <>
+            <div className="space-y-2">
+              <label htmlFor="schoolName" className="text-sm font-medium">
+                School Name
+              </label>
+              <input
+                type="text"
+                id="schoolName"
+                name="schoolName"
+                value={formData.schoolName}
+                onChange={handleChange}
+                placeholder="Enter school name"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="schoolType" className="text-sm font-medium">
+                School Type
+              </label>
+              <select
+                id="schoolType"
+                name="schoolType"
+                value={formData.schoolType}
+                onChange={handleChange}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              >
+                <option value="">Select school type</option>
+                <option value="primary">Primary School</option>
+                <option value="secondary">Secondary School</option>
+              </select>
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="contactPersonName" className="text-sm font-medium">
+                Your Position
+              </label>
+              <input
+                type="text"
+                id="contactPersonName"
+                name="contactPersonName"
+                value={formData.contactPersonName}
+                onChange={handleChange}
+                placeholder="Enter your Name"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="contactPersonName" className="text-sm font-medium">
+                Your Role
+              </label>
+              <input
+                type="text"
+                id="contactPersonRole"
+                name="contactPersonRole"
+                value={formData.contactPersonRole}
+                onChange={handleChange}
+                placeholder="Enter your position"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="teachersNeeded" className="text-sm font-medium">
+                Educators sought
+              </label>
+              <input
+                type="text"
+                id="teachersNeeded"
+                name="teachersNeeded"
+                value={formData.teachersNeeded}
+                onChange={handleChange}
+                placeholder="Enter your the subjects/courses you need educators for"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              />
+            </div>
+            <div className="space-y-2">
+              <label
+                htmlFor="subjectClassCombinations"
+                className="text-sm font-medium"
+              >
+                Subject & Class Combinations per Teacher
+              </label>
+              <textarea
+                id="subjectClassCombinations"
+                name="subjectClassCombinations"
+                value={formData.subjectClassCombinations}
+                onChange={handleChange}
+                placeholder="Please specify how you intend to combine subjects for each teacher and the classes they'll handle. For example:
+
+Teacher 1: English + Literature – SSS1 to SSS3
+Tech instructor - HTML / CSS - SSS 1 to SSS3."
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 min-h-[120px]"
+              />
+              <p className="text-xs text-gray-500">
+                This helps us understand your staffing needs better.
+              </p>
+            </div>
+          </>
+        );
+      default:
+        return null;
+    }
+  };
+
+  const userTypeTitle = {
+    school: "School",
+    parent: "Parent",
+    teacher: "Teacher",
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-white to-emerald-50 flex flex-col">
+      <header className="border-b bg-white py-2">
+        <div className="container mx-auto px-4 flex items-center justify-between">
+          <div className="flex items-center gap-2 py-2">
+            <img src={logo} alt="logo" className="h-[35px] xxs:h-[25px]" />
+          </div>
+          <a
+            href="/"
+            className="h-10 px-4 py-2 text-sm font-medium text-white rounded-md bg-[#133b55] hover:bg-[#092030]"
+          >
+            Home
+          </a>
+        </div>
+      </header>
+
+      <main className="flex-1 container mx-auto px-4 py-12">
+        <div className="max-w-md mx-auto bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden" data-aos="fade-down" data-aos-duration="1500">
+          <div className="p-6">
+            <h1 className="text-2xl font-bold mb-6 text-center">
+              Sign Up as a {userTypeTitle[userType]}
+            </h1>
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              {/* <div className="space-y-2">
+                <label htmlFor="name" className="text-sm font-medium">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Enter your full name"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  required
+                />
+              </div> */}
+
+
+              {renderUserTypeSpecificFields()}
+
+
+
+
+              {/* Phone Number Field - Added for all user types */}
+              <div className="space-y-2">
+                <label htmlFor="phoneNumber" className="text-sm font-medium">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  value={formData.phoneNumber}
+                  onChange={(e) => {
+                    const numericOnly = e.target.value.replace(/\D/g, '');
+                    // Clone the event and override value before passing it on
+                    e.target.value = numericOnly;
+                    handleChange(e);
+                  }}
+                  placeholder="Enter your phone number"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  required
+                  inputMode="numeric"
+                  pattern="[0-9]+"
+                  title="Only digits are allowed"
+                />
+
+                <p className="text-xs text-gray-500">
+                  Enter numbers only. Letters and symbols are not allowed.
+                </p>
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="location" className="text-sm font-medium">
+                  Location
+                </label>
+                <input
+                  type="string"
+                  id="location"
+                  name="location"
+                  value={formData.location}
+                  onChange={handleChange}
+                  placeholder={locationPlaceholderText}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <label htmlFor="email" className="text-sm font-medium">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder={emailPlaceholderText}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  required
+                />
+              </div>
+
+              <div className="space-y-2">
+                <label htmlFor="password" className="text-sm font-medium">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
+                  placeholder="Create a password"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  required
+                  minLength={8}
+                />
+                <p className="text-xs text-gray-500">
+                  Password must be at least 8 characters long
+                </p>
+              </div>
+
+
+
+              <div className="pt-2">
+                <button
+                  type="submit"
+                  className="w-full py-2 px-4 bg-[#133b55] hover:bg-[#133b55] text-white font-medium rounded-md transition-colors playbtn"
+                >
+                  Create Account
+                </button>
+              </div>
+            </form>
+
+            {/* <div className="mt-6 text-center">
+              <p className="text-sm text-gray-600">
+                Already have an account?{" "}
+                <a
+                  href={`/login/${userType}`}
+                  className="text-[#133b55] hover:text-[#092030] font-medium"
+                >
+                  Log In
+                </a>
+              </p>
+            </div> */}
+          </div>
+        </div>
+      </main>
+
+      <footer className="py-6 border-t bg-white">
+        <div className="container mx-auto px-4 text-center text-sm text-gray-500">
+          © 2024 Edu-Spur. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default SignupForm;
