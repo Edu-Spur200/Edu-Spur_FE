@@ -5,7 +5,7 @@ import heroImage from "../assets/Flat illustration of a teacher in a class _ Pre
 export default function Hero() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-red-50 via-orange-50 to-red-100">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16 relative z-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center min-h-[calc(100vh-160px)]">
 
           {/* Content Section */}
@@ -22,7 +22,7 @@ export default function Hero() {
             {/* Heading */}
             <div className="space-y-4" data-aos="zoom-in" data-aos-duration="1500">
               <div className="space-y-6">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-normal leading-10 text-slate-800">
+                <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl font-bold tracking-normal leading-normal text-slate-800">
                   Connecting Exceptional Educators with Eager Learners
                 </h1>
 
@@ -50,7 +50,7 @@ export default function Hero() {
 
             {/* Stats */}
             <div className="space-y-4" data-aos="fade-up" data-aos-duration="1500">
-              <div className="flex flex-wrap gap-8 pt-8">
+              <div className="flex flex-wrap gap-8 pt-5">
                 <div className="space-y-1">
                   <div className="text-3xl font-bold text-red-600">500+</div>
                   <div className="text-sm text-gray-600">Qualified Educators</div>
@@ -68,7 +68,7 @@ export default function Hero() {
           </div>
 
           {/* Image Section */}
-          <div className="relative flex items-center justify-center lg:justify-end">
+          <div className="relative flex items-center justify-center lg:justify-end mb-4 lg:mb-32">
             <div className="relative group">
               <div className="space-y-4" data-aos="fade-left" data-aos-duration="1500">
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
