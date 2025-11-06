@@ -206,8 +206,9 @@ const SignupForm: React.FC<SignupFormProps> = ({ userType, onSubmit }) => {
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
               >
                 <option value="">Select school type</option>
-                <option value="primary">Primary School</option>
-                <option value="secondary">Secondary School</option>
+                <option value="Primary">Primary School</option>
+                <option value="Secondary">Secondary School</option>
+                <option value="Both">Both</option>
               </select>
             </div>
             <div className="space-y-2">
