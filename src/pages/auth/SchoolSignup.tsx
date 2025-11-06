@@ -1,11 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import SignupForm from "../../components/auth/SignupForm";
+import { registerSchool } from "../../APIs/SchoolSignup";
 
 const SchoolSignup = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (formData: any) => {
-    // Here you would typically send the data to your API
+    registerSchool(formData)
     console.log("School signup form submitted:", formData);
 
     // After successful API call, navigate to success page with user info

@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../assets/WhatsApp Image 2025-07-16 at 4.16.21 AM.jpeg";
 
 export default function Header() {
