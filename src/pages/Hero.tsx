@@ -1,5 +1,5 @@
 // import { Star } from "lucide-react";
-import hero from "../assets/Flat illustration of a teacher in a class _ Premium AI-generated vector.jpeg";
+import hero from "../assets/african-woman2-teaching-children-class.jpg";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {

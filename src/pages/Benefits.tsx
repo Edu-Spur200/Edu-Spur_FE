@@ -8,6 +8,8 @@ import {
   Users,
 } from "lucide-react";
 
+import pix from "../assets/It's Official! Virginia Becomes Fourth State To Ban Hair Discrimination.jpg"
+
 export default function Benefits() {
   const benefits = [
     {
@@ -92,6 +94,7 @@ export default function Benefits() {
             <ArrowRight className="ml-2 h-4 w-4" />
           </button>
         </div> */}
+        <img src={pix} alt="" />
       </div>
     </section>
   );

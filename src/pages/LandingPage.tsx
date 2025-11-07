@@ -1,3 +1,4 @@
+import About from "./About";
 import Benefits from "./Benefits";
 import CallToAction from "./CallToAction";
 // import Educators from "./Educators";
@@ -9,6 +10,7 @@ const LandingPage = () => {
   return (
     <div className="">
       <Hero />
+      <About/>
       <Services />
       <Benefits />
       {/* <Educators /> */}
