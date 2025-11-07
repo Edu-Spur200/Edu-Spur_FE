@@ -219,16 +219,16 @@ export default function Services() {
             data-aos="fade-left"
             data-aos-duration="1500"
           >
-            <h3 className="text-2xl font-bold">Why Choose Edu-Spur?</h3>
+            <h3 className="text-2xl font-bold">Our Core Values</h3>
             <ul className="grid gap-3">
               {[
-                "Proximity to the homes of the teachers",
-                "Compensations for hard work",
-                "Conducive work environment",
-                "A sense of community between us and the teachers",
-                "Home lesson gigs to augment pay at school",
-                "Reasonable workloads",
-                "Tech trainings",
+                "Excellence – We uphold high standards in teaching and learning.",
+                "Integrity – We build trust through transparency and accountability.",
+                "Innovation – We embrace creativity and technology to transform education.",
+                "Collaboration – We foster strong partnerships among schools, educators, and parents.",
+                "Empowerment – We provide opportunities for teachers and students to reach their full potential.",
+                "Community – We create a supportive environment where everyone thrives together.",
+                "Impact – We measure our success by the positive difference we make in education.",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2">
                   <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#133b55]" />
@@ -237,6 +237,7 @@ export default function Services() {
               ))}
             </ul>
           </div>
+
           <img src={pix} alt="" />
         </div>
       </div>
