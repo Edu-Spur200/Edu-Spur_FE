@@ -4,7 +4,6 @@ import pix from "../assets/Hands of client and banker shaking hands on conferenc
 
 import { useState } from "react";
 import {
-  ArrowRight,
   Award,
   BookOpen,
   CheckCircle,
