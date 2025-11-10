@@ -6,7 +6,7 @@ export default function CallToAction() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    email: "",
+    phoneNumber: "",
     role: "",
     message: "",
   });
@@ -32,7 +32,7 @@ export default function CallToAction() {
       await makeEnquiry(formData);
       
       setSuccess(true);
-      setFormData({ firstName: "", lastName: "", email: "", role: "", message: "" });
+      setFormData({ firstName: "", lastName: "", phoneNumber: "", role: "", message: "" });
     } catch (err: any) {
       setError("Something went wrong. Please try again.");
     } finally {
@@ -68,7 +68,7 @@ export default function CallToAction() {
               </button>
             </div> */}
           </div>
-          <div className="bg-red-300 mx-auto w-full max-w-[500px] lg:max-w-none xxs:w-[100%] xxs:flex xxs:flex-wrap" data-aos="fade-right" data-aos-duration="1000">
+          <div className="mx-auto w-full max-w-[500px] lg:max-w-none xxs:w-[100%] xxs:flex xxs:flex-wrap" data-aos="fade-right" data-aos-duration="1000">
             <div className="rounded-lg border bg-card text-card-foreground shadow-sm w-full">
               <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="text-2xl font-semibold leading-none tracking-tight">
@@ -114,18 +114,18 @@ export default function CallToAction() {
                 </div>
                 <div className="space-y-2">
                   <label
-                    htmlFor="email"
+                    htmlFor="phoneNumber"
                     className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                   >
-                    Email
+                    PhoneNumber
                   </label>
                   <input
-                    id="email"
-                    type="email"
-                    value={formData.email}
+                    id="phoneNumber"
+                    type="text"
+                    value={formData.phoneNumber}
                     onChange={handleChange}
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Enter your email"
+                    placeholder="Enter your phoneNumber"
                   />
                 </div>
                 <div className="space-y-2">
