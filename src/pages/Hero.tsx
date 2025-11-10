@@ -13,7 +13,7 @@ export default function Hero() {
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none mb-[20px]">
                 <TypeAnimation
                 sequence={[
-                  'Connecting Exceptional Educators with Eager Learners',
+                  'Connecting Exceptional Educators with Eager Learners.',
                   1000,
                 ]}
                 wrapper="span"
