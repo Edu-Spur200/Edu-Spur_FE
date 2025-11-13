@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-full bg-neutral-50 text-neutral-900 py-16 px-6 md:px-12"
+      className="w-full bg-neutral-50 text-neutral-900  px-6 md:px-12 mt-[20px] h-full"
     >
       <div
         className="max-w-4xl mx-auto text-center"
