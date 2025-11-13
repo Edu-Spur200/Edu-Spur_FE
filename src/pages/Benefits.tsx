@@ -1,5 +1,10 @@
+"use client";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import Slider from "react-slick";
 import {
-  // ArrowRight,
   Award,
   BookOpen,
   CheckCircle,
@@ -8,7 +13,7 @@ import {
   Users,
 } from "lucide-react";
 
-import pix from "../assets/It's Official! Virginia Becomes Fourth State To Ban Hair Discrimination.jpg"
+import pix from "../assets/It's Official! Virginia Becomes Fourth State To Ban Hair Discrimination.jpg";
 
 export default function Benefits() {
   const benefits = [
@@ -50,51 +55,66 @@ export default function Benefits() {
     },
   ];
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1, // show only one slide at a time
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: true,
+    centerMode: false, // remove partial slides
+    adaptiveHeight: true,
+  };
+
   return (
     <section
       id="benefits"
-      className="w-full py-6 md:py-4 lg:py-12 bg-gray-50 xxs:w-[100%] overflow-y-hidden overflow-x-hidden pl-[60px] xxs:pl-0"
+      className="w-full py-6 md:py-12 bg-gray-50 overflow-hidden px-6"
     >
-      <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center ml-[80px] xxs:ml-[5px]">
-          <div className="space-y-2"  data-aos="fade-down" data-aos-duration="1000">
-            <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm text-[#092030]">
-              Our Impact
-            </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Bridging Educational Gaps
-            </h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Edu-Spur is committed to improving educational outcomes and
-              fostering lifelong learning for national growth.
-            </p>
+      <div className="max-w-6xl mx-auto">
+        {/* Heading */}
+        <div
+          className="flex flex-col items-center text-center space-y-4 mb-12"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm text-[#092030]">
+            Our Impact
           </div>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
+            Bridging Educational Gaps
+          </h2>
+          <p className="max-w-2xl text-muted-foreground md:text-xl/relaxed">
+            Edu-Spur is committed to improving educational outcomes and fostering
+            lifelong learning for national growth.
+          </p>
         </div>
-        <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3 l:flex l:flex-wrap ">
+
+        {/* Carousel */}
+        <Slider {...settings}>
           {benefits.map((item, i) => (
-            <div
-              key={i}
-              className="flex  flex-col items-center text-center rounded-lg border bg-card text-card-foreground shadow-sm ml-[40px] xxs:ml-[7px] l:w-[395px] l:ml-[45px] xxs:w-[300px] xs:w-[366px] x:w-[398px] x:ml-[10px] xs:ml-[9px] s:w-[340px]"
-             data-aos="fade-up" data-aos-duration="1500">
-              <div className="flex flex-col space-y-1.5 p-6" >
+            <div key={i} className="pr-1 pl-3 w-full">
+              <div
+                className="flex flex-col items-center text-center rounded-lg border bg-card text-card-foreground shadow-sm p-4 w-full"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <div className="p-2">{item.icon}</div>
-                <h3 className="text-lg font-semibold">{item.title}</h3>
-              </div>
-              <div className="p-6 pt-0">
-                <p className="text-base text-muted-foreground">
+                <h3 className="text-lg font-semibold mt-4">{item.title}</h3>
+                <p className="text-base text-muted-foreground mt-2">
                   {item.description}
                 </p>
               </div>
             </div>
           ))}
+        </Slider>
+
+        {/* Optional image */}
+        <div className="mt-12 flex justify-center">
+          <img src={pix} alt="Edu-Spur Impact" className="rounded-lg shadow-lg" />
         </div>
-        {/* <div className="flex justify-center">
-          <button className="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium text-white rounded-md bg-[#133b55] hover:bg-[#092030]">
-            Learn About Our Impact
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </button>
-        </div> */}
-        <img src={pix} alt="" />
       </div>
     </section>
   );

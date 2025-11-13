@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
-import img from "../assets/WhatsApp Image 2025-07-16 at 4.16.21 AM.jpeg"
+import img from "../assets/WhatsApp Image 2025-07-16 at 4.16.21 AM.jpeg";
 
 export default function Footer() {
   return (
     <footer className="w-full border-t bg-background pl-[80px] xxs:pl-[30px]">
       <div className="container flex flex-col gap-8 px-4 py-10 md:px-6 lg:flex-row lg:gap-12">
-        <div className="flex flex-col gap-4 lg:w-1/3" data-aos="fade-up" data-aos-duration="1500">
+        <div className="flex flex-col gap-4 lg:w-1/3">
           <div className="flex items-center gap-2">
-            {/* <GraduationCap className="h-6 w-6 text-[#133b55]" /> */}
-            <img src={img} alt="" className=" h-[30px] xxs:h-[20px]" data-aos="zoom-in" data-aos-delay="600"/>
-            {/* <span className="text-xl font-bold">Edu-Spur</span> */}
+            <img src={img} alt="" className="h-[30px] xxs:h-[20px]" />
           </div>
           <p className="text-sm text-muted-foreground">
             Empowering schools, parents, and students by connecting them with
@@ -88,153 +86,108 @@ export default function Footer() {
               </svg>
               <span className="sr-only">LinkedIn</span>
             </Link>
-
           </div>
         </div>
+
         <div className="grid flex-1 grid-cols-2 gap-8 sm:grid-cols-4">
-          <div className="space-y-3" data-aos="fade-down" data-aos-duration="1500">
+          <div className="space-y-3">
             <h3 className="text-sm font-medium">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   For Schools
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   For Parents
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   For Students
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   Tech Education
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="space-y-3" data-aos="fade-down" data-aos-duration="1500">
+
+          <div className="space-y-3">
             <h3 className="text-sm font-medium">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   Careers
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   Press
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   News
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="space-y-3" data-aos="fade-down" data-aos-duration="1500">
+
+          <div className="space-y-3">
             <h3 className="text-sm font-medium">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   Newsletter
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   Events
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   Help Center
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="space-y-3" data-aos="fade-down" data-aos-duration="1500">
+
+          <div className="space-y-3">
             <h3 className="text-sm font-medium">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   Terms
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   Privacy
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   Cookies
                 </Link>
               </li>
               <li>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
+                <Link to="#" className="text-muted-foreground hover:text-foreground">
                   Contact
                 </Link>
               </li>
@@ -242,9 +195,10 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
       <div className="border-t py-6">
         <div className="container flex flex-col items-center justify-between gap-4 px-4 md:px-6 md:flex-row">
-          <p className="text-xs text-muted-foreground" >
+          <p className="text-xs text-muted-foreground">
             © 2024 Edu-Spur. All rights reserved.
           </p>
         </div>
