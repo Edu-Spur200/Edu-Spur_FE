@@ -8,7 +8,7 @@ import Slider from "react-slick";
 import hero1 from "../assets/african-woman2-teaching-children-class.jpg";
 import hero2 from "../assets/Equipe de jovens africanos dentro de casa com gesto de mão _ Foto Premium.jpg";
 import hero3 from "../assets/woman-teaching-kids-class.jpg";
-import hero4 from "../assets/group-cheerful-friends-with-facemasks-taking-selfie-park.jpg";
+import hero4 from "../assets/group-african-kids-paying-attention-class.jpg";
 
 export default function Hero() {
   const settings = {
@@ -51,10 +51,10 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative w-full h-[calc(100vh-80px)] overflow-hidden">
+    <section className="relative w-full h-[calc(100vh-145px)] overflow-hidden bg-[#FAFAFA]">
       <Slider {...settings} className="h-full">
         {slides.map((slide, i) => (
-          <div key={i} className="relative h-[calc(100vh-80px)]">
+          <div key={i} className="relative h-[calc(100vh-125px)] ">
             <img
               src={slide.image}
               alt={`Edu-Spur slide ${i + 1}`}
